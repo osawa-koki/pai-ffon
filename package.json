@@ -12,13 +12,23 @@
     "yarn": ">= 1.22.0"
   },
   "scripts": {
-    "dev": "node ./dev.js"
+    "dev": "node ./dev.js",
+    "build": "esbuild ./src/index.ts --bundle --platform=browser --target=node20 --outfile=./public/index.js",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint ./src/**/*.ts --fix",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "esbuild": "^0.19.11",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
     "http-server": "^14.1.1"
   }
 }
