@@ -1,0 +1,17 @@
+{
+  "name": "pai-ffon",
+  "version": "1.0.0",
+  "description": "🪅🪅🪅 ビュフォンの針で円周率(π)を求めるプログラムです！",
+  "main": "./src/index.ts",
+  "repository": "https://github.com/osawa-koki/pai-ffon.git",
+  "author": "osawa-koki <koki@osawa.dev>",
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": ">= 20.0.0",
+    "yarn": ">= 1.22.0"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
