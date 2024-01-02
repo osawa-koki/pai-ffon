@@ -8,7 +8,41 @@
   <title>🪅 Pai ffon 🪅</title>
 </head>
 <body>
-  <h1>🪅 Pai ffon 🪅</h1>
+  <h1 class="mt-3 text-center">🪅 Pai ffon 🪅</h1>
+  <svg id="svg" class="mt-3 d-block mx-auto border" style="width: 300px; aspect-ratio: 1/1;" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div class="mt-3 d-flex justify-content-between mx-auto" style="max-width: 250px;">
+    <button id="start-button" class="btn btn-primary">Start</button>
+    <button id="stop-button" class="btn btn-danger" disabled>Stop</button>
+  </div>
+  <table class="table mt-5 mx-auto" style="max-width: 350px;">
+    <thead>
+      <tr class="table-light">
+        <td class="text-center">線に非接触</td>
+        <td></td>
+        <td class="text-center">線に接触</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-end">0</td>
+        <td class="table-light text-center">針の数</td>
+        <td class="text-start">0</td>
+      </tr>
+      <tr>
+        <td class="text-end"></td>
+        <td class="table-light text-center">針の割合</td>
+        <td class="text-start"></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div class="d-flex">
+            <div>π&nbsp;=&nbsp;</div>
+            <div id="pai"></div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <script src="./index.js"></script>
 </body>
 </html>
