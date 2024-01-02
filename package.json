@@ -19,6 +19,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "eslint": "^8.56.0",
     "http-server": "^14.1.1"
   }
 }
