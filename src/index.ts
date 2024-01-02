@@ -1,4 +1,12 @@
-import { svgElement } from './elements'
+import {
+  svgElement,
+  startButtonElement,
+  stopButtonElement
+} from './elements'
+
+const data = {
+  running: false
+}
 
 // 背景の線のY座標を格納する配列。
 const lineYs = []
@@ -11,3 +19,18 @@ for (let i = 0; i <= 100; i = i + 10) {
   svgElement.appendChild(line)
   lineYs.push(i)
 }
+
+startButtonElement.addEventListener('click', () => {
+  data.running = true
+  startButtonElement.disabled = true
+  stopButtonElement.disabled = false
+  run()
+})
+
+stopButtonElement.addEventListener('click', () => {
+  data.running = false
+  startButtonElement.disabled = false
+  stopButtonElement.disabled = true
+})
+
+function run (): void {}

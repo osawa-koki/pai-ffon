@@ -2,6 +2,9 @@
 
 export const svgElement = document.getElementById('svg')!
 
+export const startButtonElement = document.getElementById('start-button')! as HTMLButtonElement
+export const stopButtonElement = document.getElementById('stop-button')! as HTMLButtonElement
+
 export const inCountElement = document.getElementById('in-count')!
 export const outCountElement = document.getElementById('out-count')!
 
